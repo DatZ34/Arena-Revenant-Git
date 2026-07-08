@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CharacterAnim : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
     private void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -12,5 +12,12 @@ public class CharacterAnim : MonoBehaviour
         anim.SetFloat("x", x);
         anim.SetFloat("z", z);
     }
-
+    public void PlayBoolAnim(string name, bool value)
+    {
+        anim.SetBool(name, value);
+    }
+    public void PlayTriggerAnim(string name)
+    {
+        anim.SetTrigger(name);
+    }
 }

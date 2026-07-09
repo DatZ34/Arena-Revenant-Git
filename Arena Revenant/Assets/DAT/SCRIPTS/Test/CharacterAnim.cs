@@ -5,7 +5,17 @@ public class CharacterAnim : MonoBehaviour
     public Animator anim;
     private void Awake()
     {
-        anim = GetComponentInChildren<Animator>();
+        if (anim == null)
+        {
+            var parenAnim = GetComponent<Animator>();
+            if (parenAnim != null)
+            {
+                anim = parenAnim;
+            }else
+            {
+                anim = GetComponentInChildren<Animator>();
+            }
+        }
     }
     public void SetAnimBlend(float x, float z)
     {

@@ -18,27 +18,14 @@ public class Move : MonoBehaviour
     [SerializeField] private float jumpHeight = 1.5f; 
     private Vector3 velocity; // là Vector3 để lưu trữ vận tốc của nhân vật
 
-    [Header("Camera Preferences")]
-    public CinemachineInputAxisController controllerCamera;
-    private float currentRotationY = 0f;
-    private float newRotaionY = 0f;
-    private float rotY
-    {
-        get
-        {
-            return controllerCamera.transform.localEulerAngles.y;
-        }
-    }
     private void Start()
     {
         ctl = GetComponent<CharacterController>();
         if (animControl == null) animControl = GetComponentInChildren<CharacterAnim>();
-        controllerCamera.enabled = false;
     }
     private void Update()
     {
         HandleMovement();
-        HandleInputAxisCamera();
     }
     void HandleMovement()
     {
@@ -51,19 +38,6 @@ public class Move : MonoBehaviour
         HandleInputRoll();
         Vector3 move = transform.right * x + transform.forward * z;
         ctl.Move(move * speed * Time.deltaTime);
-        if(controllerCamera != null && controllerCamera.enabled)
-        {
-            if(rotY != currentRotationY && (x != 0 || z != 0))
-            {
-                newRotaionY = rotY;
-                currentRotationY = newRotaionY;
-                transform.rotation = Quaternion.Euler(0f, currentRotationY, 0f);
-            }else
-            {
-                currentRotationY = transform.rotation.eulerAngles.y;
-
-            }
-        }
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             animControl.PlayBoolAnim("isJump", true);
@@ -79,17 +53,6 @@ public class Move : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             animControl.PlayTriggerAnim("TG_Roll");
-        }
-    }
-    void HandleInputAxisCamera()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            controllerCamera.enabled = true;
-        }
-        else
-        {
-            controllerCamera.enabled = false;
         }
     }
 

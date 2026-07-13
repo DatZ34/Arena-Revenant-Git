@@ -118,7 +118,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Roll_L
+      name: Roll_R
       takeName: mixamo.com
       internalID: -6556537087697243763
       firstFrame: 0
@@ -147,7 +147,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Roll_R
+      name: Roll_L
       takeName: mixamo.com
       internalID: -7312523220118785054
       firstFrame: 0

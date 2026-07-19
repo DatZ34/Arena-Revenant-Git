@@ -1017,6 +1017,8 @@ GameObject:
   - component: {fileID: 736644185}
   - component: {fileID: 736644184}
   - component: {fileID: 736644183}
+  - component: {fileID: 736644188}
+  - component: {fileID: 736644187}
   m_Layer: 0
   m_Name: Character Ver 2.0
   m_TagString: Untagged
@@ -1053,10 +1055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0783c26a107098418a28e6660d21958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterCamera
+  characterInput: {fileID: 0}
   controllerCamera: {fileID: 0}
   trackingTargetCam: {fileID: 162738921}
-  currentRotY: 0
-  newRotY: 0
 --- !u!95 &736644184
 Animator:
   serializedVersion: 7
@@ -1117,6 +1118,38 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.9, z: 0}
+--- !u!114 &736644187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736644181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e912e997cede7194aa9791156223a02c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterMotor
+  animCtl: {fileID: 0}
+  cameraCtl: {fileID: 0}
+  inputCtl: {fileID: 0}
+  groundCheck: {fileID: 0}
+  isGrounded: 0
+--- !u!114 &736644188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736644181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04b201c66bc3bb459f3d173cd7a40e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterInput
+  moveInput: {x: 0, y: 0, z: 0}
+  isJumpPressed: 0
+  isLeftMousePressed: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

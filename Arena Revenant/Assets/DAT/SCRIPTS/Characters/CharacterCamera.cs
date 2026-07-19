@@ -1,11 +1,20 @@
 using UnityEngine;
 using Unity.Cinemachine;
+
+[RequireComponent(typeof(CharacterInput))]
 public class CharacterCamera : MonoBehaviour
 {
     // Chỉ lo:
         // Bật tắt InputAxisControllerCamera
-        // xuất ra giá trị currentRotY và newRotY
+        // xoay chiểu Y của nhân vật dựa trên Input mouse và góc xoay của cam
+    
+    // === Tiến độ === 
+        // Tạm thời hoàn chỉnh
 
+    [Header("Scripts Preferences")]
+    [SerializeField] private CharacterInput characterInput;
+
+    [Header("Properties")]
     [SerializeField] private CinemachineInputAxisController controllerCamera;
     private CinemachineCamera cineCam; 
     [SerializeField] private Transform trackingTargetCam; // vị trí theo dõi cần gán vào ở cine
@@ -16,8 +25,8 @@ public class CharacterCamera : MonoBehaviour
             return controllerCamera.transform.localEulerAngles.y;
         }
     }
-    public float currentRotY;
-    public float newRotY;
+    private float currentRotY;
+    private float newRotY;
 
     void Awake()
     {
@@ -43,6 +52,10 @@ public class CharacterCamera : MonoBehaviour
                 }
             }
         }
+        if(characterInput == null)
+        {
+            characterInput = GetComponent<CharacterInput>();
+        }
     }
 
 
@@ -53,7 +66,7 @@ public class CharacterCamera : MonoBehaviour
 
     void HandleInputAxisCamera() // cần đưa qua Scritp Input
     {
-        if (Input.GetMouseButton(0))
+        if (characterInput.isLeftMousePressed)
         {
             controllerCamera.enabled = true;
             currentRotY = rotY;
@@ -62,6 +75,9 @@ public class CharacterCamera : MonoBehaviour
         {
             controllerCamera.enabled = false;
             newRotY = currentRotY;
+            Vector3 currentEuler = transform.rotation.eulerAngles;
+            currentEuler.y = newRotY;
+            transform.rotation = Quaternion.Euler(currentEuler);
         }
     }
 }

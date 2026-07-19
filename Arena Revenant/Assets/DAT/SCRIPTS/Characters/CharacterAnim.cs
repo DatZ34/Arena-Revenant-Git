@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterInput))]
 public class CharacterAnim : MonoBehaviour
 {
     public Animator anim;

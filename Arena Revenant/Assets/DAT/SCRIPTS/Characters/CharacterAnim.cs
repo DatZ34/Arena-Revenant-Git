@@ -1,22 +1,18 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterInput))]
+[RequireComponent(typeof(Animator))]
 public class CharacterAnim : MonoBehaviour
 {
+    // chỉ lo:
+        // 
     public Animator anim;
     private void Awake()
     {
-        if (anim == null)
-        {
-            var parenAnim = GetComponent<Animator>();
-            if (parenAnim != null)
-            {
-                anim = parenAnim;
-            }else
-            {
-                anim = GetComponentInChildren<Animator>();
-            }
-        }
+        Init();   
+    }
+    void Init()
+    {
+        anim = GetComponent<Animator>();
     }
     public void SetAnimBlend(float x, float z)
     {
@@ -31,4 +27,5 @@ public class CharacterAnim : MonoBehaviour
     {
         anim.SetTrigger(name);
     }
+ 
 }

@@ -4,18 +4,15 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterAnim))] 
 [RequireComponent(typeof(CharacterCamera))] 
 [RequireComponent(typeof(CharacterInput))] 
+[RequireComponent(typeof(CharacterStateController))]
 public class CharacterMotor : MonoBehaviour
 {
-    // Chỉ lo :
-        // Move
-        // Jump
-        // Gravity
-        // Roll
-
-    // === Tiến độ === 
-        // Tạm thời hoàn chỉnh
+    [Header("Runtime Values")] // dùng để quan sát ở editor - ko quan trọng lắm
+    [SerializeField] private bool isJumping;
+    [SerializeField] private bool isRolling;
 
     [Header("Scripts Preferences")]
+    [SerializeField] private CharacterStateController stateCtl;
     [SerializeField] private CharacterAnim animCtl;
     [SerializeField] private CharacterCamera cameraCtl;
     [SerializeField] private CharacterInput inputCtl;
@@ -23,9 +20,10 @@ public class CharacterMotor : MonoBehaviour
     [Header("Character Controller Preferences")]
     private CharacterController ctl;
     private float speed = 5f;
+    private float baseSpeed = 5f;
     private float gravity = -9.81f;
     private float jumpHeight = 1.5f;
-    private Vector3 velocity; // là Vector3 để lưu trữ vận tốc nhân vật
+    private Vector3 velocity;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -37,14 +35,19 @@ public class CharacterMotor : MonoBehaviour
     {
         Init();
     }
+
     private void Update()
     {
         RaycastGroundCheck();
         HandleMovement(inputCtl.moveInput.x, inputCtl.moveInput.z);
+        HandleRoll(inputCtl.isRollPressed);
         HandleJump(inputCtl.isJumpPressed);
+
     }
-    void Init() // Hàm khởi động các thành phần cần thiết của CharacterMotor
+
+    void Init()
     {
+        stateCtl = GetComponent<CharacterStateController>();
         animCtl = GetComponent<CharacterAnim>();
         cameraCtl = GetComponent<CharacterCamera>();
         ctl = GetComponent<CharacterController>();
@@ -54,68 +57,112 @@ public class CharacterMotor : MonoBehaviour
             groundCheck = transform.Find("GroundCheck");
         }
     }
+
     void HandleMovement(float x, float z)
     {
         Vector3 move = transform.right * x + transform.forward * z;
         ctl.Move(move * speed * Time.deltaTime);
 
-        velocity.y += gravity * Time.deltaTime;
-        ctl.Move(velocity * Time.deltaTime);
-    }
-    void HandleJump(bool isJump)
-    {
-        if(isJump && isGrounded)
+        if (isJumping  && !isGrounded)
         {
+            stateCtl.ChangeState(CharacterState.Jumping);
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-    }
-    void RaycastGroundCheck()
-    {
-        // Hàm này phụ trách bắn tia theo hướng Vector3.Down để check xem có chạm đất hay không ?
-        // ở đây hits là nơi lưu về các colider mà Raycast va chạm theo thứ tự.
-        RaycastHit[] hits = new RaycastHit[4];
-        int hitCount = Physics.SphereCastNonAlloc(
-            groundCheck.position,   // vị trí bắn tia
-            radius,                 // độ rộng khu vực
-            Vector3.down,           // hướng bắn của tia
-            hits,                   // nơi lưu
-            distance                // độ dài của tia
-        );
-        if(hitCount > 0)
+        velocity.y += gravity * Time.deltaTime;
+        ctl.Move(velocity * Time.deltaTime);
+
+            // === Gọi ChangeState ở đây ===
+        if (move.magnitude > 0.1f && isGrounded)
         {
-            // lấy hit gần nhất
-            RaycastHit hit = hits[0];
-            
-            float distanceToGround = hit.distance;
-            if(distanceToGround < 0.1f) 
+            // Nếu giữ Shift thì chạy, ngược lại đi bộ
+            if (inputCtl.isLeftShiftPressed)
             {
-                isGrounded = true;
-            }else if(distanceToGround >= 2.5f)
+                speed = baseSpeed * 2;
+                stateCtl.ChangeState(CharacterState.Running);
+            }else
             {
-                isGrounded = false;
-            }
-            else
-            {
-                isGrounded = false;
+                speed = baseSpeed;
+                stateCtl.ChangeState(CharacterState.Walking);
             }
         }
         else
         {
+            speed = baseSpeed;
+            stateCtl.ChangeState(CharacterState.Idle);
+        }
+    }
+
+    void HandleJump(bool isJump)
+    {
+        if(isJump && isGrounded)
+        {
+            // stateCtl.ChangeState(CharacterState.Jumping);
+            isJumping = true;
+            isGrounded = false;
+
+            // velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+        else if(isGrounded)
+        {
+            isJumping = false;
+        }
+    }
+
+    void HandleRoll(bool isRoll)
+    {
+        isRolling = isRoll;
+    }
+
+    void RaycastGroundCheck()
+    {
+        RaycastHit[] hits = new RaycastHit[4];
+        int hitCount = Physics.SphereCastNonAlloc(
+            groundCheck.position,
+            radius,
+            Vector3.down,
+            hits,
+            distance
+        );
+
+        if(hitCount > 0)
+        {
+            RaycastHit hit = hits[0];
+            float distanceToGround = hit.distance;
+
+            if(distanceToGround < 0.1f) 
+            {
+                if(velocity.y < 0)
+                {
+                    isGrounded = true;
+                    velocity.y = 0f;
+                }
+            }else if(distanceToGround <= 1.5f) // độ cao vừa vặn để chuyển anim đáp đất
+            {
+                stateCtl.ChangeState(CharacterState.Landing);
+            }
+            else if(distanceToGround >= 2.5f) // Chân không chạm đât và đang ở độ cao trên 2.5m
+            {   
+                stateCtl.ChangeState(CharacterState.Falling);
+                isGrounded = false;
+            }
+            else // hmm để dư 
+            {
+                isGrounded = false;
+            }
+        }
+        else // không hit đồng nghĩa với (distanceToGround >= 2.5f)
+        {
+            stateCtl.ChangeState(CharacterState.Falling);
             isGrounded = false;
         }
     }
-    void OnDrawGizmos() // dùng để vẽ raycast trực quan trong editor xem
+
+
+    void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-
-        // Vẽ hình cầu tại vị trí nhân vật
         Gizmos.DrawWireSphere(groundCheck.transform.position, radius);
-
-        // Vẽ hình cầu tại điểm cuối cast
         Gizmos.DrawWireSphere(groundCheck.transform.position + Vector3.down * distance, radius);
-
-        // Vẽ đường nối giữa hai hình cầu
         Gizmos.DrawLine(groundCheck.transform.position, groundCheck.transform.position + Vector3.down * distance);
     }
-    
 }

@@ -889,13 +889,15 @@ GameObject:
   - component: {fileID: 683252472}
   - component: {fileID: 683252473}
   - component: {fileID: 683252474}
+  - component: {fileID: 683252475}
+  - component: {fileID: 683252476}
   m_Layer: 0
   m_Name: Character Ver 1.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &683252468
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,6 +1006,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &683252475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683252467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04b201c66bc3bb459f3d173cd7a40e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterInput
+--- !u!114 &683252476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683252467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d894ddcb9de4804681ae623f7b2f003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStateController
+  currentState: 0
 --- !u!1 &736644181
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1046,7 @@ GameObject:
   - component: {fileID: 736644183}
   - component: {fileID: 736644188}
   - component: {fileID: 736644187}
+  - component: {fileID: 736644189}
   m_Layer: 0
   m_Name: Character Ver 2.0
   m_TagString: Untagged
@@ -1130,10 +1158,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e912e997cede7194aa9791156223a02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMotor
+  isJumping: 0
+  isRolling: 0
+  stateCtl: {fileID: 0}
   animCtl: {fileID: 0}
   cameraCtl: {fileID: 0}
   inputCtl: {fileID: 0}
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 145946180}
   isGrounded: 0
 --- !u!114 &736644188
 MonoBehaviour:
@@ -1147,9 +1178,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e04b201c66bc3bb459f3d173cd7a40e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterInput
-  moveInput: {x: 0, y: 0, z: 0}
-  isJumpPressed: 0
-  isLeftMousePressed: 0
+--- !u!114 &736644189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736644181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d894ddcb9de4804681ae623f7b2f003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStateController
+  currentState: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

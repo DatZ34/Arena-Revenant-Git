@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1.3333334
-    y: 50
-    width: 1501.3334
-    height: 903.3334
+    x: 0
+    y: 42.666668
+    width: 1504
+    height: 912
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1501.3334
-    height: 903.3333
+    width: 1504
+    height: 912
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,11 +69,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1501.3334
+    width: 1504
     height: 36
   m_MinSize: {x: 50, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 14}
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 883.3333
-    width: 1501.3334
+    y: 892
+    width: 1504
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -115,12 +115,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 36
-    width: 1501.3334
-    height: 847.3333
+    width: 1504
+    height: 856
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 26
+  controlID: 36
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -141,12 +141,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 672
-    height: 847.3333
+    width: 625.3333
+    height: 856
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 27
+  controlID: 37
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -165,17 +165,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 672
-    height: 443.33334
+    width: 625.3333
+    height: 446.66666
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 15}
   - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,23 +186,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: AnimationWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 443.33334
-    width: 672
-    height: 403.99997
-  m_MinSize: {x: 201, y: 226}
+    y: 446.66666
+    width: 625.3333
+    height: 409.33334
+  m_MinSize: {x: 51, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,14 +220,14 @@ MonoBehaviour:
   - {fileID: 11}
   m_Position:
     serializedVersion: 2
-    x: 672
+    x: 625.3333
     y: 0
-    width: 447.33337
-    height: 847.3333
+    width: 509.3333
+    height: 856
   m_MinSize: {x: 100, y: 112}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 51
+  controlID: 119
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -246,13 +246,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 447.33337
-    height: 465.33334
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
-  m_ActualView: {fileID: 19}
+    width: 509.3333
+    height: 470
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -271,14 +271,14 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 465.33334
-    width: 447.33337
-    height: 381.99997
+    y: 470
+    width: 509.3333
+    height: 386
   m_MinSize: {x: 232, y: 276}
   m_MaxSize: {x: 10002, y: 10026}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &12
@@ -296,19 +296,524 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1119.3334
+    x: 1134.6666
     y: 0
-    width: 382
-    height: 847.3333
+    width: 369.33337
+    height: 856
   m_MinSize: {x: 276, y: 76}
   m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 21}
   - {fileID: 22}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77605b453f0629148b3bffb54a8ffa05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: SidekickCharacters.Editor::Synty.SidekickCharacters.ModularCharacterWindow
+  m_MinSize: {x: 600, y: 600}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Sidekick Character Tool
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Sidekick Character Tool\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 1134.6667
+    y: 78.66667
+    width: 368.33337
+    height: 830
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+  _undoProxy: {fileID: 0}
+  _lastAppliedSnapshot: "Name: Combined Character\r\nSpecies: 1\r\nParts:\r\n- Name:
+    SK_HUMN_BASE_02_01HEAD_HU01\r\n  PartType: Head\r\n  PartVersion: 1\r\n- Name:
+    SK_HUMN_BASE_08_02HAIR_HU01\r\n  PartType: Hair\r\n  PartVersion: 1\r\n- Name:
+    SK_HUMN_BASE_04_03EBRL_HU01\r\n  PartType: EyebrowLeft\r\n  PartVersion: 1\r\n-
+    Name: SK_HUMN_BASE_04_04EBRR_HU01\r\n  PartType: EyebrowRight\r\n  PartVersion:
+    1\r\n- Name: SK_HUMN_BASE_01_05EYEL_HU01\r\n  PartType: EyeLeft\r\n  PartVersion:
+    1\r\n- Name: SK_HUMN_BASE_01_06EYER_HU01\r\n  PartType: EyeRight\r\n  PartVersion:
+    1\r\n- Name: SK_HUMN_BASE_10_07EARL_HU01\r\n  PartType: EarLeft\r\n  PartVersion:
+    1\r\n- Name: SK_HUMN_BASE_04_08EARR_HU01\r\n  PartType: EarRight\r\n  PartVersion:
+    1\r\n- Name: SK_HUMN_BASE_08_09FCHR_HU01\r\n  PartType: FacialHair\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_10TORS_HU01\r\n  PartType: Torso\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_11AUPL_HU01\r\n  PartType: ArmUpperLeft\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_12AUPR_HU01\r\n  PartType: ArmUpperRight\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_13ALWL_HU01\r\n  PartType: ArmLowerLeft\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_14ALWR_HU01\r\n  PartType: ArmLowerRight\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_15HNDL_HU01\r\n  PartType: HandLeft\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_16HNDR_HU01\r\n  PartType: HandRight\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_17HIPS_HU01\r\n  PartType: Hips\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_18LEGL_HU01\r\n  PartType: LegLeft\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_19LEGR_HU01\r\n  PartType: LegRight\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_20FOTL_HU01\r\n  PartType: FootLeft\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_21FOTR_HU01\r\n  PartType: FootRight\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_22AHED_HU01\r\n  PartType: AttachmentHead\r\n  PartVersion:
+    1\r\n- Name: SK_FANT_KNGT_17_23AFAC_HU01\r\n  PartType: AttachmentFace\r\n  PartVersion:
+    1\r\n- Name: SK_SCFI_CIVL_09_25AHPF_HU01\r\n  PartType: AttachmentHipsFront\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_10_26AHPB_HU01\r\n  PartType: AttachmentHipsBack\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_27AHPL_HU01\r\n  PartType: AttachmentHipsLeft\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_28AHPR_HU01\r\n  PartType: AttachmentHipsRight\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_29ASHL_HU01\r\n  PartType: AttachmentShoulderLeft\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_30ASHR_HU01\r\n  PartType: AttachmentShoulderRight\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_33AKNL_HU01\r\n  PartType: AttachmentKneeLeft\r\n 
+    PartVersion: 1\r\n- Name: SK_SCFI_CIVL_09_34AKNR_HU01\r\n  PartType: AttachmentKneeRight\r\n 
+    PartVersion: 1\r\n- Name: SK_HUMN_BASE_09_35NOSE_HU01\r\n  PartType: Nose\r\n 
+    PartVersion: 1\r\n- Name: SK_HUMN_BASE_02_36TETH_HU01\r\n  PartType: Teeth\r\n 
+    PartVersion: 1\r\n- Name: SK_HUMN_BASE_01_37TONG_HU01\r\n  PartType: Tongue\r\n 
+    PartVersion: 1\r\nColorSet:\r\n  Species: 1\r\n  Name: Custom\r\n  SourceColorPath:
+    Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_ColorMap.png\r\n 
+    SourceMetallicPath: Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_MetallicMap.png\r\n 
+    SourceSmoothnessPath: Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_SmoothnessMap.png\r\n 
+    SourceReflectionPath: Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_ReflectionMap.png\r\n 
+    SourceEmissionPath: Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_EmissionMap.png\r\n 
+    SourceOpacityPath: Assets/Synty/Tools/SidekickCharacters/Resources/Textures/T_OpacityMap.png\r\nColorRows:\r\n-
+    ColorProperty: 1\r\n  MainColor: BF9062\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 2\r\n  MainColor: C7986A\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 3\r\n  MainColor: C7986A\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 4\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 5\r\n  MainColor: C7986A\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 6\r\n  MainColor: BF9062\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 7\r\n  MainColor: BF9062\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 8\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 9\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 10\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 11\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 12\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 13\r\n  MainColor: AF8057\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 14\r\n  MainColor: BF9062\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 15\r\n  MainColor: E79A9C\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 16\r\n  MainColor: FFF3CE\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 17\r\n  MainColor: E5D8AF\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 18\r\n  MainColor: E79A9C\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 19\r\n  MainColor: E79A9C\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 20\r\n  MainColor: D0D0D0\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 21\r\n  MainColor: D0D0D0\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 22\r\n  MainColor: 32281D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 23\r\n  MainColor: 32281D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 24\r\n  MainColor: 262626\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 25\r\n  MainColor: 262626\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 26\r\n  MainColor: 503E2B\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 27\r\n  MainColor: 503E2B\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 28\r\n  MainColor: FFFFFF\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 29\r\n  MainColor: FFFFFF\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 30\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 31\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 32\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 33\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 34\r\n  MainColor: CAA58E\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 35\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 36\r\n  MainColor: 26272D\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 37\r\n  MainColor: CAA58E\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 38\r\n  MainColor: B35149\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 39\r\n  MainColor: 944842\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 40\r\n  MainColor: AFA382\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 41\r\n  MainColor: 94896F\r\n  Metallic: FF0000\r\n  Smoothness:
+    FF0000\r\n  Reflection: FF0000\r\n  Emission: FF0000\r\n  Opacity: FF0000\r\n-
+    ColorProperty: 42\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 43\r\n  MainColor: 7F6D4E\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 44\r\n  MainColor: 3E466D\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 45\r\n  MainColor: 55575F\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 46\r\n  MainColor: 3E435A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 47\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 48\r\n  MainColor: 7F6D4E\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 49\r\n  MainColor: 3E466D\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 50\r\n  MainColor: 55575F\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 51\r\n  MainColor: 3E435A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 52\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 53\r\n  MainColor: 7F6D4E\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 54\r\n  MainColor: 3E466D\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 55\r\n  MainColor: 55575F\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 56\r\n  MainColor: 3E435A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 57\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 58\r\n  MainColor: 634F3A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 59\r\n  MainColor: 3E466D\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 60\r\n  MainColor: 55575F\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 61\r\n  MainColor: 3E435A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 62\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 63\r\n  MainColor: 634F3A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 64\r\n  MainColor: 3E466D\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 65\r\n  MainColor: 55575F\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 66\r\n  MainColor: 3E435A\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 67\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 68\r\n  MainColor: 9A826A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 69\r\n  MainColor: 3E435A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 70\r\n  MainColor: 7F6D4E\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 71\r\n  MainColor: 84413A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 72\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 73\r\n  MainColor: 3B332A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 74\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 75\r\n  MainColor: 9A7249\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 76\r\n  MainColor: 84413A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 77\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 78\r\n  MainColor: 3B332A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 79\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 80\r\n  MainColor: 9A7249\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 81\r\n  MainColor: 84413A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 82\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 83\r\n  MainColor: 3B332A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 84\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 85\r\n  MainColor: 9A7249\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 86\r\n  MainColor: 84413A\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 87\r\n  MainColor: 625343\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 88\r\n  MainColor: 3B332A\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 89\r\n  MainColor: 625343\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 90\r\n  MainColor: 9A7249\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 91\r\n  MainColor: 84413A\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 92\r\n  MainColor: 625343\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 93\r\n  MainColor: 985D41\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 94\r\n  MainColor: B5B6B5\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 95\r\n  MainColor: 383838\r\n  Metallic: B7B7B7\r\n  Smoothness:
+    B7B7B7\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 96\r\n  MainColor: 383838\r\n  Metallic: B7B7B7\r\n  Smoothness:
+    B7B7B7\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 97\r\n  MainColor: 383838\r\n  Metallic: B7B7B7\r\n  Smoothness:
+    B7B7B7\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 98\r\n  MainColor: 383838\r\n  Metallic: B7B7B7\r\n  Smoothness:
+    B7B7B7\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 99\r\n  MainColor: 383838\r\n  Metallic: B7B7B7\r\n  Smoothness:
+    B7B7B7\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 100\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 101\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 102\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 103\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 104\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 105\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 106\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 107\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 108\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 109\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 110\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 111\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 112\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 113\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 114\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 115\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 116\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 117\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 118\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 119\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 120\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 121\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 122\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 123\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 124\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 125\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 126\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 127\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 128\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 129\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 130\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 131\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 132\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 133\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 134\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 135\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 136\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 137\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 138\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 139\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 140\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 141\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 142\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 143\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 144\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 145\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 146\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 147\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 148\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 149\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 150\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 151\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 152\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 153\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 154\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 155\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 156\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 157\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 158\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 159\r\n  MainColor: 383838\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 160\r\n  MainColor: 6F7077\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: FFFFFF\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 161\r\n  MainColor: 616667\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: FFFFFF\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 162\r\n  MainColor: 515456\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: FFFFFF\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 163\r\n  MainColor: 404246\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: FFFFFF\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 164\r\n  MainColor: AC986A\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 165\r\n  MainColor: AF8944\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 166\r\n  MainColor: B075E7\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 167\r\n  MainColor: 8951BD\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 168\r\n  MainColor: 8F94AB\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: 000000\r\n-
+    ColorProperty: 169\r\n  MainColor: 877549\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: 000000\r\n-
+    ColorProperty: 170\r\n  MainColor: 00FF8E\r\n  Metallic: 545554\r\n  Smoothness:
+    545554\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 171\r\n  MainColor: 00C9FF\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 172\r\n  MainColor: 9A9FA2\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 173\r\n  MainColor: 949AA2\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 174\r\n  MainColor: 8D997D\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 175\r\n  MainColor: 838865\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 176\r\n  MainColor: 373532\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 177\r\n  MainColor: 2B2926\r\n  Metallic: FFFFFF\r\n  Smoothness:
+    FFFFFF\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 178\r\n  MainColor: 837E78\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 179\r\n  MainColor: 5A5D62\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 180\r\n  MainColor: 988D77\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 181\r\n  MainColor: 81755E\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 182\r\n  MainColor: 837462\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 183\r\n  MainColor: 6D5E4C\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 184\r\n  MainColor: 725A45\r\n  Metallic: AAAAAA\r\n  Smoothness:
+    AAAAAA\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 185\r\n  MainColor: 624F3D\r\n  Metallic: AAAAAA\r\n  Smoothness:
+    AAAAAA\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 186\r\n  MainColor: 745A40\r\n  Metallic: 525552\r\n  Smoothness:
+    525552\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 187\r\n  MainColor: 5C4939\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 188\r\n  MainColor: A68B69\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 189\r\n  MainColor: 6D5F4B\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 190\r\n  MainColor: 8E806D\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 191\r\n  MainColor: 776A5A\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 192\r\n  MainColor: B2ADA6\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 193\r\n  MainColor: 9F9B96\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 194\r\n  MainColor: 856D56\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 195\r\n  MainColor: 957D64\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 196\r\n  MainColor: 953D6A\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 197\r\n  MainColor: 703F58\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 198\r\n  MainColor: 7B7879\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 199\r\n  MainColor: 565656\r\n  Metallic: 545454\r\n  Smoothness:
+    545454\r\n  Reflection: 000000\r\n  Emission: 000000\r\n  Opacity: FFFFFF\r\n-
+    ColorProperty: 200\r\n  MainColor: FFFFFF\r\n- ColorProperty: 201\r\n  MainColor:
+    FFFFFF\r\n- ColorProperty: 202\r\n  MainColor: FFFFFF\r\n- ColorProperty: 203\r\n 
+    MainColor: FFFFFF\r\n- ColorProperty: 204\r\n  MainColor: FFFFFF\r\n- ColorProperty:
+    205\r\n  MainColor: FFFFFF\r\n- ColorProperty: 206\r\n  MainColor: FFFFFF\r\n-
+    ColorProperty: 207\r\n  MainColor: FFFFFF\r\n- ColorProperty: 208\r\n  MainColor:
+    FFFFFF\r\n- ColorProperty: 209\r\n  MainColor: FFFFFF\r\nBlendShapes:\r\n  BodyTypeValue:
+    100\r\n  BodySizeValue: 100\r\n  MuscleValue: 100\r\n"
+  _lastAppliedPresetSelections: 'Head: None
+
+    UpperBody: None
+
+    LowerBody:
+    None
+
+    Body Type: Feminine - Heavy
+
+    Species: None
+
+    Outfits: None
+
+    Attachments:
+    None
+
+    Materials: None
+
+'
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,8 +835,8 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1501.3334
+    y: 42.666668
+    width: 1504
     height: 36
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -588,7 +1093,338 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &14
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 50, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+    m_TextWithWhitespace: "Animator\u200B"
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 78.66667
+    width: 624.3333
+    height: 420.66666
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_ContainerData: []
+    m_DynamicPanelContainerData: []
+    m_OverlaysVisible: 1
+    m_DynamicPanelBehavior: 0
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 3631586463400097538, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
+    - {fileID: 4894229624735455492, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
+    - {fileID: 6021900577584942315, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
+    - {fileID: 4059634150091160937, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
+    - {fileID: 6875484463717030980, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: 8075438346594102115, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: 542978281069828284, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: 4467659387863348477, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: 1349735558720461719, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: -5967630136822148722, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: -4962522856163134921, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    - {fileID: 458555113186488540, guid: 11c59461c14220f4c8941506353fe084, type: 2}
+    - {fileID: 3554835711866649281, guid: 92cc49bea0ffd134597afcfe47ed0855, type: 2}
+    - {fileID: 3554835711866649281, guid: 00dfd35ee10c46b4d995e143adbf8ae0, type: 2}
+    - {fileID: 3554835711866649281, guid: 2b0e8dacc077fd44eb091c5980ea6194, type: 2}
+    - {fileID: 1054697724596794206, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.56310916
+      e01: 0
+      e02: 0
+      e03: -41.496033
+      e10: 0
+      e11: 0.56310916
+      e12: 0
+      e13: 37.144928
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.5220063
+      e01: 0
+      e02: 0
+      e03: 32.592255
+      e10: 0
+      e11: 0.5220063
+      e12: 0
+      e13: 154.46255
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.0115792
+      e01: 0
+      e02: 0
+      e03: 46.257324
+      e10: 0
+      e11: 1.0115792
+      e12: 0
+      e13: -65.49104
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.5260138
+      e01: 0
+      e02: 0
+      e03: 119.76811
+      e10: 0
+      e11: 0.5260138
+      e12: 0
+      e13: 23.262207
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.4631579
+      e01: 0
+      e02: 0
+      e03: 1.1053009
+      e10: 0
+      e11: 0.4631579
+      e12: 0
+      e13: 151.52982
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.44510847
+      e01: 0
+      e02: 0
+      e03: 134.68222
+      e10: 0
+      e11: 0.44510847
+      e12: 0
+      e13: 132.95435
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.7893263
+      e01: 0
+      e02: 0
+      e03: 147.91711
+      e10: 0
+      e11: 0.7893263
+      e12: 0
+      e13: 42.157883
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 161.33331
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 153.66666
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.85
+      e01: 0
+      e02: 0
+      e03: 173.7333
+      e10: 0
+      e11: 0.85
+      e12: 0
+      e13: 137.41666
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.6892245
+      e01: 0
+      e02: 0
+      e03: 2.2348022
+      e10: 0
+      e11: 0.6892245
+      e12: 0
+      e13: 11.331909
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.70884347
+      e01: 0
+      e02: 0
+      e03: 38.591843
+      e10: 0
+      e11: 0.70884347
+      e12: 0
+      e13: 11.455795
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.42210504
+      e01: 0
+      e02: 0
+      e03: -6.10524
+      e10: 0
+      e11: 0.42210504
+      e12: 0
+      e13: 70.09973
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.51228064
+      e01: 0
+      e02: 0
+      e03: -10.614014
+      e10: 0
+      e11: 0.51228064
+      e12: 0
+      e13: 131.40936
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.51228064
+      e01: 0
+      e02: 0
+      e03: -10.614014
+      e10: 0
+      e11: 0.51228064
+      e12: 0
+      e13: 140
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.51228064
+      e01: 0
+      e02: 0
+      e03: -10.614014
+      e10: 0
+      e11: 0.51228064
+      e12: 0
+      e13: 120.69928
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.41500202
+      e01: 0
+      e02: 0
+      e03: 76.01483
+      e10: 0
+      e11: 0.41500202
+      e12: 0
+      e13: 130.14304
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 6875484463717030980, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: 1054697724596794206, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,9 +1446,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
-    width: 671
-    height: 417.33334
+    y: 78.66667
+    width: 624.3333
+    height: 420.66666
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -669,12 +1505,12 @@ MonoBehaviour:
       displayed: 1
       id: unity-scene-view-toolbar
       index: 4
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-454.6666259765625,"y":-416.6666564941406},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":170.00006103515626,"y":54.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -454.66663, y: -416.66666}
+      snapOffset: {x: 170.00006, y: 54}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -781,12 +1617,12 @@ MonoBehaviour:
       displayed: 1
       id: Orientation
       index: 0
-      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-112.0,"y":26.666667938232423},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":1,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-112.0,"y":-74.66665649414063},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -112, y: 26.666668}
+      snapOffset: {x: -112, y: -74.66666}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 3
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1264,7 +2100,7 @@ MonoBehaviour:
         state: 0
         overlayData: []
     - containerId: overlay-dynamic-panel--right
-      width: 185.33333
+      width: 139.2
       saveData:
         state: 1
         overlayData: []
@@ -1281,9 +2117,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 3.9266624, y: 0.91942024, z: -3.7990646}
+    m_Target: {x: -0.11540598, y: 0.89812493, z: 0.08233881}
     speed: 2
-    m_Value: {x: 3.9266624, y: 0.91942024, z: -3.7990646}
+    m_Value: {x: -0.11540598, y: 0.89812493, z: 0.08233881}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1305,7 +2141,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1321,7 +2157,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1329,13 +2165,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.17343453, y: -0.08654418, z: 0.015301763, w: 0.9809164}
+    m_Target: {x: -0.08821547, y: 0.7356376, z: -0.09768055, w: -0.664485}
     speed: 2
-    m_Value: {x: -0.17343454, y: 0.086544186, z: -0.015301764, w: -0.9809164}
+    m_Value: {x: -0.09020728, y: 0.73533154, z: -0.099885754, w: -0.6642086}
   m_Size:
-    m_Target: 1.9037938
+    m_Target: 3.4355602
     speed: 2
-    m_Value: 1.9037938
+    m_Value: 3.2876174
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1356,7 +2192,7 @@ MonoBehaviour:
   m_LastSceneViewRotation: {x: -0.029451242, y: -0.06472676, z: 0.00053258945, w: -0.99813086}
   m_LastSceneViewOrtho: 1
   m_Viewpoint:
-    m_SceneView: {fileID: 14}
+    m_SceneView: {fileID: 16}
     m_CameraOverscanSettings:
       m_Opacity: 50
       m_Scale: 1
@@ -1369,7 +2205,7 @@ MonoBehaviour:
     name: Contributors / Receivers
     section: Lighting
   m_ViewIsLockedToObject: 0
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1390,10 +2226,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 86
-    width: 671
-    height: 417.33334
+    x: 0
+    y: 78.66667
+    width: 624.3333
+    height: 420.66666
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1407,319 +2243,7 @@ MonoBehaviour:
     m_DynamicPanelContainerData: []
     m_OverlaysVisible: 1
     m_DynamicPanelBehavior: 0
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 50, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Animator\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 1.3333334
-    y: 86
-    width: 671
-    height: 417.33334
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_DynamicPanelContainerData: []
-    m_OverlaysVisible: 1
-    m_DynamicPanelBehavior: 0
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: 3631586463400097538, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
-    - {fileID: 4894229624735455492, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
-    - {fileID: 6021900577584942315, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
-    - {fileID: 4059634150091160937, guid: b178d123d3fea4a4faaa295e7df2f656, type: 2}
-    - {fileID: 6875484463717030980, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: 8075438346594102115, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: 542978281069828284, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: 4467659387863348477, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: 1349735558720461719, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: -5967630136822148722, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: -4962522856163134921, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    - {fileID: 458555113186488540, guid: 11c59461c14220f4c8941506353fe084, type: 2}
-    - {fileID: 3554835711866649281, guid: 92cc49bea0ffd134597afcfe47ed0855, type: 2}
-    - {fileID: 3554835711866649281, guid: 00dfd35ee10c46b4d995e143adbf8ae0, type: 2}
-    - {fileID: 3554835711866649281, guid: 2b0e8dacc077fd44eb091c5980ea6194, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.56310916
-      e01: 0
-      e02: 0
-      e03: -41.496033
-      e10: 0
-      e11: 0.56310916
-      e12: 0
-      e13: 37.144928
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.5220063
-      e01: 0
-      e02: 0
-      e03: 32.592255
-      e10: 0
-      e11: 0.5220063
-      e12: 0
-      e13: 154.46255
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1.0115792
-      e01: 0
-      e02: 0
-      e03: 46.257324
-      e10: 0
-      e11: 1.0115792
-      e12: 0
-      e13: -65.49104
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.5260138
-      e01: 0
-      e02: 0
-      e03: 119.76811
-      e10: 0
-      e11: 0.5260138
-      e12: 0
-      e13: 23.262207
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.47495723
-      e01: 0
-      e02: 0
-      e03: 16.947037
-      e10: 0
-      e11: 0.47495723
-      e12: 0
-      e13: 131.0343
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.56065625
-      e01: 0
-      e02: 0
-      e03: 127.15375
-      e10: 0
-      e11: 0.56065625
-      e12: 0
-      e13: 141.19847
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.472315
-      e01: 0
-      e02: 0
-      e03: 223.47284
-      e10: 0
-      e11: 0.472315
-      e12: 0
-      e13: 78.48146
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 1
-      e01: 0
-      e02: 0
-      e03: 161.33331
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 153.66666
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.85
-      e01: 0
-      e02: 0
-      e03: 173.7333
-      e10: 0
-      e11: 0.85
-      e12: 0
-      e13: 137.41666
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.7291384
-      e01: 0
-      e02: 0
-      e03: 102.08427
-      e10: 0
-      e11: 0.7291384
-      e12: 0
-      e13: 52.38417
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.70884347
-      e01: 0
-      e02: 0
-      e03: 38.591843
-      e10: 0
-      e11: 0.70884347
-      e12: 0
-      e13: 11.455795
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.46687374
-      e01: 0
-      e02: 0
-      e03: -8.343689
-      e10: 0
-      e11: 0.46687374
-      e12: 0
-      e13: 55.312347
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.51228064
-      e01: 0
-      e02: 0
-      e03: -10.614014
-      e10: 0
-      e11: 0.51228064
-      e12: 0
-      e13: 131.40936
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.51228064
-      e01: 0
-      e02: 0
-      e03: -10.614014
-      e10: 0
-      e11: 0.51228064
-      e12: 0
-      e13: 140
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.51228064
-      e01: 0
-      e02: 0
-      e03: -10.614014
-      e10: 0
-      e11: 0.51228064
-      e12: 0
-      e13: 120.69928
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 6875484463717030980, guid: 6ae4aad9d61fc724a8047c7c420af5d3, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 0
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1740,10 +2264,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Animation\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1.3333334
-    y: 529.3334
-    width: 671
-    height: 377.99997
+    x: 0
+    y: 525.3334
+    width: 624.3333
+    height: 383.33334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1760,7 +2284,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 0
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1782,9 +2306,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 467.33334
-    width: 671
-    height: 377.99997
+    y: 525.3334
+    width: 624.3333
+    height: 383.33334
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1833,7 +2357,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1842,30 +2366,30 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 671
-      height: 356.99997
-    m_Scale: {x: 0.49583328, y: 0.49583328}
-    m_Translation: {x: 335.5, y: 178.49998}
+      width: 624.3333
+      height: 362.33334
+    m_Scale: {x: 0.4877604, y: 0.4877604}
+    m_Translation: {x: 312.16666, y: 181.16667}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -676.63873
-      y: -360
-      width: 1353.2775
-      height: 720
+      x: -640
+      y: -371.42554
+      width: 1280
+      height: 742.8511
     m_MinimalGUI: 1
-  m_defaultScale: 0.49583328
-  m_LastWindowPixelSize: {x: 671, y: 377.99997}
+  m_defaultScale: 0.4877604
+  m_LastWindowPixelSize: {x: 936.5, y: 575}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
   m_showToolbar: 1
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1886,10 +2410,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1
-    y: 24
-    width: 445.33337
-    height: 439.33334
+    x: 625.3334
+    y: 78.66667
+    width: 507.3333
+    height: 444
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1910,17 +2434,27 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -1944
-      - m_Data: -1940
-      - m_Data: -1936
-      - m_Data: -1880
-      - m_Data: -1848
+      - m_Data: -2342
+      - m_Data: -2338
+      - m_Data: -2316
+      - m_Data: -2312
+      - m_Data: -2196
+      - m_Data: -2192
+      - m_Data: -2112
+      - m_Data: -2030
+      - m_Data: -2026
+      - m_Data: -2018
+      - m_Data: -1950
+      - m_Data: -1946
+      - m_Data: -1942
+      - m_Data: -1886
+      - m_Data: -1874
       - m_Data: -1300
-      - m_Data: 50180
+      - m_Data: 50548
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: foot_l
+        m_OriginalName: foot_l
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -1928,10 +2462,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 0
+          m_Data: -2322
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 10}
@@ -1942,7 +2476,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 8edb531b031dacf4cbf9c812a90e3d4d
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1963,10 +2497,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1
-    y: 489.33334
-    width: 445.33337
-    height: 355.99997
+    x: 625.3334
+    y: 548.6667
+    width: 507.3333
+    height: 360
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1991,7 +2525,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 2
     m_Folders:
-    - Assets/DAT/SCRIPTS/Characters
+    - Assets/DAT/ASSET Store/ANIMATION
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2001,55 +2535,62 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/DAT/SCRIPTS/Characters
+  - Assets/DAT/ASSET Store/ANIMATION
   m_LastFoldersGridSize: 75
   m_LastProjectPath: C:\Dev_Dat\Arena Revenant Git\Arena Revenant
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 2
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 284.00003}
+    scrollPos: {x: 0, y: 32}
     m_SelectedIDs:
-    - m_Data: 52718
+    - m_Data: 51248
     m_LastClickedID:
-      m_Data: 52718
+      m_Data: 51248
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50854
-    - m_Data: 50856
-    - m_Data: 50858
-    - m_Data: 50860
-    - m_Data: 50862
-    - m_Data: 50864
-    - m_Data: 50866
-    - m_Data: 50868
-    - m_Data: 50870
-    - m_Data: 50872
-    - m_Data: 50874
-    - m_Data: 50876
-    - m_Data: 50878
-    - m_Data: 50880
-    - m_Data: 50882
-    - m_Data: 50884
-    - m_Data: 50886
-    - m_Data: 50888
-    - m_Data: 50890
-    - m_Data: 50892
-    - m_Data: 50894
-    - m_Data: 50896
-    - m_Data: 50898
-    - m_Data: 50900
-    - m_Data: 50902
-    - m_Data: 50904
-    - m_Data: 50906
-    - m_Data: 50908
-    - m_Data: 50910
-    - m_Data: 50912
-    - m_Data: 50914
-    - m_Data: 50916
-    - m_Data: 50918
-    - m_Data: 50920
-    - m_Data: 50922
+    - m_Data: 51218
+    - m_Data: 51220
+    - m_Data: 51222
+    - m_Data: 51224
+    - m_Data: 51226
+    - m_Data: 51228
+    - m_Data: 51230
+    - m_Data: 51232
+    - m_Data: 51234
+    - m_Data: 51236
+    - m_Data: 51238
+    - m_Data: 51240
+    - m_Data: 51242
+    - m_Data: 51244
+    - m_Data: 51246
+    - m_Data: 51248
+    - m_Data: 51250
+    - m_Data: 51252
+    - m_Data: 51254
+    - m_Data: 51256
+    - m_Data: 51258
+    - m_Data: 51260
+    - m_Data: 51262
+    - m_Data: 51264
+    - m_Data: 51266
+    - m_Data: 51268
+    - m_Data: 51270
+    - m_Data: 51272
+    - m_Data: 51274
+    - m_Data: 51276
+    - m_Data: 51278
+    - m_Data: 51280
+    - m_Data: 51282
+    - m_Data: 51284
+    - m_Data: 51286
+    - m_Data: 51288
+    - m_Data: 51290
+    - m_Data: 51292
+    - m_Data: 51294
+    - m_Data: 53136
+    - m_Data: 1000000000
+    - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2082,41 +2623,45 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 50854
-    - m_Data: 50856
-    - m_Data: 50858
-    - m_Data: 50860
-    - m_Data: 50862
-    - m_Data: 50864
-    - m_Data: 50866
-    - m_Data: 50868
-    - m_Data: 50870
-    - m_Data: 50872
-    - m_Data: 50874
-    - m_Data: 50876
-    - m_Data: 50878
-    - m_Data: 50880
-    - m_Data: 50882
-    - m_Data: 50884
-    - m_Data: 50886
-    - m_Data: 50888
-    - m_Data: 50890
-    - m_Data: 50892
-    - m_Data: 50894
-    - m_Data: 50896
-    - m_Data: 50898
-    - m_Data: 50900
-    - m_Data: 50902
-    - m_Data: 50904
-    - m_Data: 50906
-    - m_Data: 50908
-    - m_Data: 50910
-    - m_Data: 50912
-    - m_Data: 50914
-    - m_Data: 50916
-    - m_Data: 50918
-    - m_Data: 50920
-    - m_Data: 50922
+    - m_Data: 51218
+    - m_Data: 51220
+    - m_Data: 51222
+    - m_Data: 51224
+    - m_Data: 51226
+    - m_Data: 51228
+    - m_Data: 51230
+    - m_Data: 51232
+    - m_Data: 51234
+    - m_Data: 51236
+    - m_Data: 51238
+    - m_Data: 51240
+    - m_Data: 51242
+    - m_Data: 51244
+    - m_Data: 51246
+    - m_Data: 51248
+    - m_Data: 51250
+    - m_Data: 51252
+    - m_Data: 51254
+    - m_Data: 51256
+    - m_Data: 51258
+    - m_Data: 51260
+    - m_Data: 51262
+    - m_Data: 51264
+    - m_Data: 51266
+    - m_Data: 51268
+    - m_Data: 51270
+    - m_Data: 51272
+    - m_Data: 51274
+    - m_Data: 51276
+    - m_Data: 51278
+    - m_Data: 51280
+    - m_Data: 51282
+    - m_Data: 51284
+    - m_Data: 51286
+    - m_Data: 51288
+    - m_Data: 51290
+    - m_Data: 51292
+    - m_Data: 51294
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2196,6 +2741,34 @@ MonoBehaviour:
     - m_Data: 106570
     - m_Data: 52934
     - m_Data: 52938
+    - m_Data: 110692
+    - m_Data: 110710
+    - m_Data: 110696
+    - m_Data: 110682
+    - m_Data: 110702
+    - m_Data: 110772
+    - m_Data: 110780
+    - m_Data: 110748
+    - m_Data: 110756
+    - m_Data: 110812
+    - m_Data: 110808
+    - m_Data: 293194
+    - m_Data: 66408
+    - m_Data: 65640
+    - m_Data: 51782
+    - m_Data: 56560
+    - m_Data: 67994
+    - m_Data: 78878
+    - m_Data: 53568
+    - m_Data: 54070
+    - m_Data: 54120
+    - m_Data: 54160
+    - m_Data: 54152
+    - m_Data: 54184
+    - m_Data: 61556
+    - m_Data: 61564
+    - m_Data: 56632
+    - m_Data: 56602
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2224,8 +2797,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 75
   m_SkipHiddenPackages: 1
-  m_DirectoriesAreaWidth: 196.66669
---- !u!114 &21
+  m_DirectoriesAreaWidth: 211.33336
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2246,10 +2819,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1120.3334
-    y: 24
-    width: 381
-    height: 821.3333
+    x: 1134.6667
+    y: 78.66667
+    width: 368.33337
+    height: 830
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -2266,51 +2839,13 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 204.66669
+    m_CachedPref: 191.33331
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 451.33337
+  m_LastVerticalScrollValue: 894.6667
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &22
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77605b453f0629148b3bffb54a8ffa05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: SidekickCharacters.Editor::Synty.SidekickCharacters.ModularCharacterWindow
-  m_MinSize: {x: 600, y: 600}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Sidekick Character Tool
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-    m_TextWithWhitespace: "Sidekick Character Tool\u200B"
-  m_Pos:
-    serializedVersion: 2
-    x: 1120.6667
-    y: 86
-    width: 381
-    height: 821.3333
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_ContainerData: []
-    m_DynamicPanelContainerData: []
-    m_OverlaysVisible: 1
-    m_DynamicPanelBehavior: 0
